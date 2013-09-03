@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    article#board
+        table
+            tbody
+            - for (var i = 0; i < 7; ++i) {
+                tr
+                    - for (var j = 0; j < 7; ++j) {
+                        td(id='b#{j+i*7}',class="square")
+                    - }
+            - }
+    aside
+       nav
+          ul
+             li#create_action
+             li#join_action
+       div#list

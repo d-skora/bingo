@@ -1,0 +1,121 @@
+html
+    height 100%
+    background rgb(255,255,255)
+    background -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 24%, rgba(225,225,225,1) 79%, rgba(246,246,246,1) 100%)
+    background -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(24%,rgba(241,241,241,1)), color-stop(79%,rgba(225,225,225,1)), color-stop(100%,rgba(246,246,246,1)))
+    background -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 24%,rgba(225,225,225,1) 79%,rgba(246,246,246,1) 100%)
+    background -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 24%,rgba(225,225,225,1) 79%,rgba(246,246,246,1) 100%)
+    background -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 24%,rgba(225,225,225,1) 79%,rgba(246,246,246,1) 100%)
+    background linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 24%,rgba(225,225,225,1) 79%,rgba(246,246,246,1) 100%)
+    filter 'progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorstr=%s, EndColorstr=%s)' % (color1 color2)
+
+body
+    height 100%
+
+#wrapper
+    width 67%
+    height 85%;
+    background rgba(34,139,34,1)
+    border 1px #888 solid
+    border-radius 3px
+    margin auto
+    padding 15px
+    min-height 600px
+
+#content
+    width 100%
+    height 100%
+    background-color white
+    box-shadow inset 0 3px 15px rgba(0,0,0,0.8), 0 0 8px rgba(255,255,255,0.6)
+    border 1px solid rgba(0,0,0,0.6)
+    border-radius 3px
+    min-height: 600px
+    aside
+        min-height: 600px;
+        height 100%
+        background-color rgba(204, 204, 204, 0.4)
+        width 30%
+        float right
+        box-shadow inset 0 0 20px #000000
+        position: relative
+        nav
+            margin auto
+            margin-top 20px
+            ul
+                -webkit-padding-start 15px
+                li
+                    width 100px
+                    height 90px
+                    margin 10px
+                    list-style none
+                    display inline-block
+                    background-color rgba(230, 230, 230, 0.4)
+                    border-radius 12px
+                    box-shadow inset 0 1px 30px rgba(255,255,255,0.6), 0 0 9px rgba(0,0,0,0.4)
+                    &:hover
+                        box-shadow inset 0 1px 30px rgba(255,255,255,0.6), 0 0 9px rgba(34,139,34,1)
+
+#board
+    float left
+    padding 10px
+    width 65%
+    table
+        margin auto
+        td
+            width 70px
+            height 70px
+            background-color rgba(230, 230, 230, 0.4)
+            border 1px solid #888
+            box-shadow inset 0 1px 30px rgba(255,255,255,0.6), 0 0 9px rgba(0,0,0,0.4)
+            text-align center
+            font-weight bold
+            font-size 3em
+            font-family tahoma
+            &:hover
+                box-shadow inset 0 1px 30px rgba(255,255,255,0.6), 0 0 14px rgba(34,139,34,1)
+                background-color rgba(34,139,34,1)
+
+#list
+    background-color white
+    width 90%
+    height 420px
+    overflow-y scroll
+    margin auto
+    box-shadow inset 0 1px 15px rgba(0,0,0,0.4), 0 0 4px rgba(255,255,255,0.6)
+    border-radius 3px
+    .list-item
+        width: 100%;
+        height: 40px;
+        border-bottom: 2px dotted #e3e3e3;
+        font-family: Helvetica;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+
+#join_action
+    background-image url('../images/join.png')
+    background-repeat no-repeat
+    background-position: 4px 0
+    &:hover
+        background-image url('../images/join_hover.png')
+
+
+#create_action
+    background-image url('../images/create.png')
+    background-repeat no-repeat
+    background-position: 4px 0
+    &:hover
+       background-image url('../images/create_hover.png')
+
+body .ui-widget input, body .ui-widget select
+    width: 98%;
+    margin: 5px 0;
+
+
+body .ui-widget input[type="submit"]
+    background-color: green;
+    color: #fff;
+
+#board table td.square.disapear
+    background-color: grey!important
+
